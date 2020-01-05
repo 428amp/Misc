@@ -34,7 +34,6 @@ def enumPrimes3(n):
       isPrime[j] = False
   return [i for i in range(len(isPrime)) if isPrime[i]]
 
-
 def main():
   # print(enumPrimes3(7))
   for i in range(1000):
