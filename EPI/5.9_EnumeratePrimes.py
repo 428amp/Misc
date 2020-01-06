@@ -32,7 +32,7 @@ def enumPrimes3(n):
       continue
     for j in range(2*i, n+1, i):
       isPrime[j] = False
-  return [i for i in range(len(isPrime)) if isPrime[i]]
+  return [i for i in range(len(isPrime)) if isPrime[i]]  
 
 def main():
   # print(enumPrimes3(7))
