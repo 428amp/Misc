@@ -14,7 +14,8 @@ def convert(n, b1, b2):
   return ''.join(r)+'b'+str(b2)
 
 def main():
-  print(convert('1024', 10, 2))
-
+  for n in range(1, 1025):
+    print(convert(str(n), 10, 2))
+  
 if __name__ == '__main__':
   main()
