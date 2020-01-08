@@ -1,17 +1,8 @@
-def g(fn):
-  def i():
-    print('before')
-    fn()
-    print('after')
-  return i
+class C:
+  count = 100
+  def __init__(self):
+    self.count += 1
+    print(self.count)
 
-@g
-def f():
-  print('f')
-
-def F():
-  print('F')
-F = g(F)
-
-f()
-F()
+  def incrementC():
+    C.count = 200
