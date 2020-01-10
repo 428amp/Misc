@@ -35,7 +35,6 @@ def computePnemonics(N):
       for c in keyMap[int(N[d])]:
         cur[d] = c
         helper(d+1)
-  
   P = []
   cur = [0]*len(N)
   helper(0)

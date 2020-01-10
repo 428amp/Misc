@@ -8,6 +8,9 @@ map = {
   'M': 1000,
 }
 
+#special cases
+#IV IX XL XC CD CM
+#b2b exceptions not allowed
 def RtoD(R):
   pass
 
