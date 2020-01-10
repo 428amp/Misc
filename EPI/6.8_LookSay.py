@@ -18,9 +18,25 @@ def lookSay(n):
     lsN = []
   return ls
 
+#version using itertools.groupby
+import itertools
+def lookSay2(n):
+  ls = '1'
+  for i in range(n):
+    cur = []
+    curBreakdown = itertools.groupby(ls)
+    for key, group in curBreakdown:
+      cur.append(str(len(list(group)))+str(key))
+    ls = ''.join(cur)
+  return ls
+
+
 def main():
-  for i in range(10):
-    print(lookSay(i))
+  for i in range(15):
+    if lookSay(i) != lookSay2(i):
+      print('diff')
+  else:
+    print('no diff')
 
 if __name__ == '__main__':
   main()
