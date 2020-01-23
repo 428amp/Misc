@@ -18,7 +18,6 @@ def mergeSortedArrays(sortedArrays):
       heapq.heappush(minElements, (sortedArrays[cur[1]][cur[2]+1], cur[1], cur[2]+1))
   return s
 
-
 def main():
   import random
   P = [i for i in range(100)]
