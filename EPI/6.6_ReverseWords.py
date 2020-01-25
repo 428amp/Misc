@@ -39,6 +39,7 @@ def main():
     reverseWords(s2)
     if ''.join(s2) != reverseWordsDumb(s):
       print('reverse inplace failed')
+      break
     # # print(s)
     # # print(s2)
     # print(reverseWordsDumb(s))

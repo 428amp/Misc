@@ -34,6 +34,7 @@ def main():
     kSorted = sortAlmostSorted(almostSorted, k)
     if dumbSorted != kSorted:
       print('mismatch')
+      break
     # print(almostSorted)
     # print(sortAlmostSorted(almostSorted, 4))
   else:

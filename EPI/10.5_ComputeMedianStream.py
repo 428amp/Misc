@@ -40,7 +40,7 @@ def main():
       print('mismatch')
       print(med)
       print(dumb_med)
-      print()
+      break
   else:
     print('no mismatch')
 

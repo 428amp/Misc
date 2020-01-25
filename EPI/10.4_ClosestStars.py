@@ -58,7 +58,7 @@ def main():
       print('mismatch')
       print(A)
       print(B)
-      print()
+      break
     # print(kClosest(stars, 5))
     # print(dumb_kClosest(stars, 5))
   else:

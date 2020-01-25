@@ -39,6 +39,7 @@ def main():
   for i in range(1000):
     if enumPrimes3(i) != enumPrimes2(i):
       print('disagree')
+      break
   else:
     print('agree')
 

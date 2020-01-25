@@ -31,12 +31,14 @@ def main():
   for i in range(-1000,1000,1):
     if ItoS(i) != str(i):
       print('ItoS failed')
+      break
   else:
     print('ItoS success')
 
   for i in range(-1000, 1000, 1):
     if StoI(str(i)) != i:
       print('StoI failed')
+      break
   else:
     print('StoI success')
 

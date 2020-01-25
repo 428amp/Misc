@@ -31,6 +31,7 @@ def main():
     merged = mergeSortedArrays(sortedArrays)
     if dumbMerged != merged:
       print('mismatch')
+      break
   else:
     print('no mismatch')
 

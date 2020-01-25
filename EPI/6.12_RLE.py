@@ -42,6 +42,7 @@ def main():
     # print(decoded)
     if s != decoded:
       print('s != decoded')
+      break
   else:
     print('all s == decoded')
 

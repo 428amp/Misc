@@ -33,6 +33,7 @@ def DtoA(d):
   return [int(c) for c in reversed(str(d))]
 
 def main():
+  E = False
   for i in range(100):
     for j in range(1000):
       a = DtoA(i)
@@ -40,7 +41,8 @@ def main():
       p = AtoD(product(a, b))
       if p != i*j:
         print('incorrect product calc')
-  else:
+        E = True
+  if not(E):
     print('no incorrect product calcs')
 
 if __name__ == '__main__':

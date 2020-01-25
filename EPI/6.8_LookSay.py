@@ -35,6 +35,7 @@ def main():
   for i in range(15):
     if lookSay(i) != lookSay2(i):
       print('diff')
+      break
   else:
     print('no diff')
 

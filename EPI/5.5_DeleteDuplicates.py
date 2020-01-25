@@ -32,6 +32,7 @@ def main():
     e = deleteDuplicates(A)
     if A[:e+1] != B:
       print('deleteDuplicates failed')
+      break
   else:
     print('deleteDuplicates success')
 

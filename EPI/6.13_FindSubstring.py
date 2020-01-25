@@ -29,6 +29,7 @@ def main():
     sWithSub = s[:insertIndex] + sub + s[insertIndex:]
     if find(sub, sWithSub) != sWithSub.find(sub):
       print('find mismatch')
+      break
   else:
     print('no find mismatch')
 

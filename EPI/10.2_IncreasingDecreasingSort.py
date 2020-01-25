@@ -53,6 +53,7 @@ def main():
     # print(sorted(L))
     if sortedL != sorted(L):
       print('mismatch')
+      break
   else:
     print('no mismatch')
   
