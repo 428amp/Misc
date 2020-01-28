@@ -18,6 +18,7 @@ def hash(s):
     h[ord(letter)-ord('a')] += 1
   return '/'.join([str(c) for c in h])
 
+#cost nm instead of nmlogm since hash() only costs m instead of mlogm now
 def findAnagrams(strings):
   d = collections.defaultdict(list)
   for string in strings:
