@@ -16,7 +16,6 @@ def dumb_letterConstructible(letter, magazine):
           return True
   return False
 
-
 def main():
   import random
   for i in range(1000):
