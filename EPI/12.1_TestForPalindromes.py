@@ -1,3 +1,4 @@
+import collections
 letters = [chr(ord('a')+i) for i in range(26)]
 
 def testForPalindromes(s):
@@ -16,6 +17,14 @@ def testForPalindromes(s):
         seenOdd = True
   return True
 
+#using collections.Counter() for condensed code
+def testForPalindromes2(s):
+  #count
+  c = collections.Counter(s)
+  #check at most 1 odd# count
+  return sum(v%2 for v in c.values()) <= 1
+
+
 def main():
   import random
   for i in range(10000):
@@ -25,7 +34,7 @@ def main():
     roll = random.randrange(0, 2)
     word += [random.choice(letters)]*roll + word[::-1]
     word = ''.join(word)
-    if not testForPalindromes(word):
+    if not testForPalindromes2(word):
       print(word)
       break
   else:
