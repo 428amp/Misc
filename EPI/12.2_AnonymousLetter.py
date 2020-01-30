@@ -1,5 +1,7 @@
 import collections
 
+#currently counts special characters such as ' ' and '\n', mostly not an issue if
+#magazine much longer than letter
 def letterConstructible(letter, magazine):
   c1 = collections.Counter(letter)
   c2 = collections.Counter(magazine)
