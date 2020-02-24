@@ -16,13 +16,14 @@ def smallestMissing(L):
   for i in range(len(L)):
     if L[i] != i+1:
       return i+1
+  return len(L)+1
 
 def main():
   import random
   for i in range(1000):
     sz = random.randrange(10, 100)
     firstMissing = random.randrange(1, sz+2)
-    L = [i for i in range(firstMissing)]
+    L = [i for i in range(1, firstMissing)]
     L += random.sample([-(i+1) for i in range(sz)], k=(sz-(firstMissing-1)))
     random.shuffle(L)
     sMissing = smallestMissing(L)
