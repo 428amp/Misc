@@ -13,6 +13,9 @@ def smallestMissing(L):
         i += 1
     else:
       i += 1
+  # #puke if too many swaps
+  # if (ct/len(L)) >= 2:
+  #   return -1
   for i in range(len(L)):
     if L[i] != i+1:
       return i+1
