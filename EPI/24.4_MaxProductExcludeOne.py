@@ -34,6 +34,20 @@ def maxProductExcludeOne(L):
       product *= L[i]
   return product
 
+def dumb_maxProductExcludeOne(L):
+  maxProd = None
+  for i in range(len(L)):
+    cur = 1
+    for j in range(len(L)):
+      if j != i:
+        cur *= L[j]
+    if not maxProd:
+      maxProd = cur
+      continue
+    if cur > maxProd:
+      maxProd = cur
+  return maxProd
+
 def main():
   #cases of interest
   L = [None]*6
@@ -44,9 +58,7 @@ def main():
   L[4] = [0, -1, 2, 3, 4, 5]
   L[5] = [-1, -2, 3, 4, 5]
   for l in L:
-    print(maxProductExcludeOne(l))
-
-
+    print(maxProductExcludeOne(l), dumb_maxProductExcludeOne(l))
 
 if __name__ == '__main__':
   main()
